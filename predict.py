@@ -10,6 +10,7 @@ Code to run prediction for the project
 __author__ = 'Ethan'
 
 
+import os
 import argparse
 from multiprocessing import Pool
 from functools import partial
@@ -182,6 +183,9 @@ def predict(data_path='data/predict/', model_path='pretrained/model.h5', use_pro
 
 
 if __name__ == '__main__':
+    if not os.path.exists('out'):
+        os.makedirs('out')
+
     res = predict(use_prophet=args.use_prophet)
     res.to_csv('out/result.csv')
 
