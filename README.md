@@ -24,7 +24,7 @@ Install all the packages needed:
 `python predict.py --use_prophet --num_thread 4 --batch_size 64`
 
 #### arguments:
-  `--use_prophet` use facebook's prophet model instead of 
+  `--use_prophet` use facebook's prophet model instead of wavenet model for prediction
   
   `--num_thread ` number of thread you want to use to speed up prediction
   
