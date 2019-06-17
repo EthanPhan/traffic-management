@@ -28,7 +28,7 @@ Install all the packages needed:
   
   `--num_thread ` number of thread you want to use to speed up prediction
   
-  `--batch_size` batch size. Only applicable when predict using keras model
+  `--batch_size` batch size. Only applicable when predict using wavenet model
   
  
 ***Note:*** Currently , prophet yeild better result compared to the wavenet model but it's significantly slower because we have to retrain the model for every location. Which model to use is up to you
