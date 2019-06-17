@@ -184,3 +184,5 @@ def predict(data_path='data/predict/', model_path='pretrained/model.h5', use_pro
 if __name__ == '__main__':
     res = predict(use_prophet=args.use_prophet)
     res.to_csv('out/result.csv')
+
+    print('Predictions saved at out/result.csv')
